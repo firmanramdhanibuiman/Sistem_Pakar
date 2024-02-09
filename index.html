@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Pakar Diagnosa Kekurangan Unsur Hara dan Saran Penggunaan Pupuk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Pakar</h1>
+        <h2>Diagnosa Kekurangan Unsur Hara dan Saran Penggunaan Pupuk</h2>
+        <form id="diagnosisForm">
+            <label for="symptoms">Pilih Salah Satu Gejala:</label>
+        <select id="symptoms" multiple>
+            <option value="1">Daun tanaman jagung mengalami klorosis pada bagian tengah daun.</option>
+            <option value="2">Tanaman jagung tumbuh dengan lambat dan daun mengalami pucat.</option>
+            <option value="3">Tinggi tanaman jagung tidak sesuai dengan umur tanaman.</option>
+            <option value="4">Daun-daun tanaman jagung mengalami keriting pada bagian ujung.</option>
+            <option value="5">Tongkol jagung kecil dan kurang berisi.</option>
+            <option value="6">Tanaman jagung tampak layu meskipun tanah terasa cukup lembab.</option>
+            <option value="7">Daun tanaman jagung mengalami bercak coklat dengan tepi yang kering.</option>
+            <option value="8">Daun tanaman jagung mengalami pucat di bagian antara tulang daun.</option>
+            <option value="9">Tumbuhan jagung terlihat merunduk dan tangkai daun mudah patah.</option>
+            <option value="10">Daun tanaman jagung mengalami klorosis pada bagian tepi daun.</option>
+            <option value="11">Tumbuhan jagung tampak kerdil dan daun mengalami perubahan warna.</option>
+            <option value="12">Daun tanaman jagung mengalami pembusukan pada bagian pangkal tanaman.</option>
+            <option value="13">Tumbuhan jagung tampak kerdil dan daun mengalami perubahan warna.</option>
+            <option value="14">Tingkat produksi tanaman jagung menurun secara signifikan.</option>
+            <option value="15">Daun tanaman jagung mengalami deformitas pada ujungnya.</option>
+        </select>
+            <button type="button" onclick="diagnose()">Diagnosa</button>
+        </form>
+        <div id="result"></div>
+        <div id="treatment"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
